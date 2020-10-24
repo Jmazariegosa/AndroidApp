@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fbTextView"
+        android:layout_width="198dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <EditText
+        android:id="@+id/IDmail"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="84dp"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/fbTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <EditText
+        android:id="@+id/IDcontraseña"
+        android:layout_width="308dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:hint="Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/IDmail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="68dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDcontraseña"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegisterUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/IDcontraseña"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
